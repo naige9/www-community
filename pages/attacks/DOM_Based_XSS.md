@@ -45,7 +45,7 @@ in the query string, as the parameter “default”.
 
     <select><script>
 
-    document.write("<OPTION value=1>"+document.location.href.substring(document.location.href.indexOf("default=")+8)+"</OPTION>");
+    document.write("<OPTION value=1>"+decodeURIComponent(document.location.href.substring(document.location.href.indexOf("default=")+8))+"</OPTION>");
 
     document.write("<OPTION value=2>English</OPTION>");
 
@@ -72,16 +72,18 @@ the document.location object contains the string:
     http://www.some.site/page.html?default=<script>alert(document.cookie)</script>
 
 The original Javascript code in the page does not expect the default
-parameter to contain HTML markup, and as such it simply echoes it into
-the page (DOM) at runtime. The browser then renders the resulting page
-and executes the attacker’s script:
+parameter to contain HTML markup, and as such it simply decodes and echoes
+it into the page (DOM) at runtime. The browser then renders the resulting
+page and executes the attacker’s script:
 
     alert(document.cookie)
 
 Note that the HTTP response sent from the server does not contain the
 attacker’s payload. This payload manifests itself at the client-side
 script at runtime, when a flawed script accesses the DOM variable
-document.location and assumes it is not malicious.
+document.location and assumes it is not malicious. In addition, most
+browsers URL encode document.location by default which reduces the
+impact or possibility of many DOM XSS attacks.
 
 ### Advanced Techniques and Derivatives
 
@@ -131,7 +133,7 @@ Applications from Universal PDF XSS: A discussion of how weird the web
 application security world has become" at the [2007 OWASP Europe AppSec
 Conference](OWASP_AppSec_Europe_2007_-_Italy "wikilink") in Milan. The
 presentation (\[5\]) can be downloaded
-[here](http://www.owasp.org/images/c/c2/OWASPAppSec2007Milan_ProtectingWebAppsfromUniversalPDFXSS.ppt).
+[here](https://wiki.owasp.org/images/c/c2/OWASPAppSec2007Milan_ProtectingWebAppsfromUniversalPDFXSS.ppt).
 
 ### Extensions
 
@@ -202,7 +204,7 @@ Giorgio Fedon, December 2006
 \[5\] "Protecting Web Applications from Universal PDF XSS" (2007 OWASP
 Europe AppSec presentation) Ivan Ristic, May 2007
 
-<http://www.owasp.org/images/c/c2/OWASPAppSec2007Milan_ProtectingWebAppsfromUniversalPDFXSS.ppt>
+<https://wiki.owasp.org/images/c/c2/OWASPAppSec2007Milan_ProtectingWebAppsfromUniversalPDFXSS.ppt>
 
 \[6\] OWASP Testing Guide
 

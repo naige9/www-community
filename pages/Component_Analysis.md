@@ -261,6 +261,7 @@ and legal teams an opportunity to create solutions for healthy open source usage
 | [CAST Highlight] | CAST Software | Commercial | SaaS |
 | [Clarity] | Insignary | Commercial | Cross Platform / SaaS |
 | [ClearlyDefined] | Open Source Initiative | Open Source | SaaS |
+| [Debricked] | Debricked | Commercial/Freemium | SaaS |
 | [DejaCode] | nexB | Commercial | SaaS |
 | [Dependency-Check] | OWASP | Open Source | Cross Platform |
 | [Dependency-Track] | OWASP | Open Source | Cross Platform |
@@ -277,6 +278,7 @@ and legal teams an opportunity to create solutions for healthy open source usage
 | [Libraries.io] | Tidelift | Open Source | SaaS |
 | [MergeBase] | MergeBase | Commercial | SaaS |
 | [NPM Audit] | NPM | Open Source | SaaS |
+| [OSS Index] | Sonatype | Free / Open Source | SaaS |
 | [PHP Security Checker] | SensioLabs | Open Source | SaaS |
 | [Renovate] | Key Location | Open Source | SaaS |
 | [Snyk] | Snyk | Commercial / Freemium | SaaS |
@@ -286,12 +288,15 @@ and legal teams an opportunity to create solutions for healthy open source usage
 | [Retire.js] | RetireJS Project | Open Source | Cross Platform |
 | [VulnDB] | Risk Based Security | Commercial	| SaaS |
 | [Patton] | OWASP | Open Source | Cross Platform |
+| [Vigiles] | Timesys | Commercial / Freemium | SaaS |
+| [Vigilant Ops InSight] | Vigilant Ops | Commercial | Cross Platform / SaaS |
 
 [GitHub SCA]: https://docs.github.com/en/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on/
 [Black Duck Hub]: https://www.blackducksoftware.com/
 [CAST Highlight]: https://www.castsoftware.com/SCA/
 [Clarity]: https://www.insignary.com/
 [ClearlyDefined]: https://clearlydefined.io/
+[Debricked]: https://debricked.com/
 [DejaCode]: https://www.nexb.com/
 [Dependency-Check]: https://owasp.org/www-project-dependency-check/
 [Dependency-Track]: https://owasp.org/www-project-dependency-track/
@@ -308,6 +313,7 @@ and legal teams an opportunity to create solutions for healthy open source usage
 [Libraries.io]: https://libraries.io/
 [MergeBase]: http://mergebase.com/
 [NPM Audit]: https://www.npmjs.com/
+[OSS Index]: https://ossindex.sonatype.org/
 [PHP Security Checker]: https://github.com/sensiolabs/security-checker
 [Renovate]: https://renovatebot.com/
 [Snyk]: https://snyk.io/
@@ -317,6 +323,8 @@ and legal teams an opportunity to create solutions for healthy open source usage
 [Retire.js]: https://retirejs.github.io/retire.js/
 [VulnDB]: https://vulndb.cyberriskanalytics.com/
 [Patton]: https://owasp.org/www-project-patton/
+[Vigiles]: https://www.timesys.com/security/vigiles-vulnerability-management-patch-monitoring/
+[Vigilant Ops InSight]: https://vigilant-ops.com/
 
 
 ## References
@@ -344,4 +352,5 @@ and legal teams an opportunity to create solutions for healthy open source usage
   - Managing Security Risks Inherent in the Use of Third-party Components (SAFECode)  
     - <https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf>
   - Deliver Uncompromised (MITRE)  
-    - <https://www.mitre.org/sites/default/files/publications/pr-18-2417-deliver-uncompromised-MITRE-study-8AUG2018.pdf>
+    - <https://www.mitre.org/sites/default/files/publications/pr-18-2417-deliver-uncompromised-MITRE-study-26AUG2019.pdf>
+

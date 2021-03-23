@@ -2,8 +2,8 @@
 
 layout: col-sidebar
 title: Static Code Analysis
-author: 
-contributors: kingthorin
+author: Ryan Dewhurst
+contributors: KirstenS, Nick Bloor, Sarah Baso, James Bowie, Ram ch, EvgeniyRyzhkov, Iberiam, Ann.campbell, Ejohn20, Jonathan Marcil, Christina Schelin, Jie Wang, Fabian, Achim, Dirk Wetter, kingthorin
 tags: controls, source code analysis, static code analysis
 permalink: /controls/Static_Code_Analysis
 
@@ -88,7 +88,7 @@ node only has a entry edge, this is know as an ‘exit’ block (Wögerer,
 Example Control Flow Graph; ‘node 1’ represents the entry block and
 ‘node 6’ represents the exit block.
 
-￼![Control_flow_graph.png](Control_flow_graph.png
+![Control_flow_graph.png](../../assets/images/Control_flow_graph.png
 "Control_flow_graph.png")
 
 ### Taint Analysis
@@ -108,7 +108,7 @@ Lexical Analysis converts source code syntax into ‘tokens’ of
 information in an attempt to abstract the source code and make it easier
 to manipulate (Sotirov, 2005).
 
-Pre tokenised PHP source code:
+Pre-tokenised PHP source code:
 
 `<?php $name = "Ryan"; ?>`
 
@@ -181,70 +181,11 @@ environment and whether it is configured securely.
 
 ### OWASP LAPSE+ Static Code Analysis Tool
 
-![LapsePlusScreenshot.png](LapsePlusScreenshot.png
-"LapsePlusScreenshot.png")
+![LapsePlusScreenshot.png](LapsePlusScreenshot.png "LapsePlusScreenshot.png")
 
-## Tools
+### Tool Lists
 
-### OWASP Tools
-
-| Software                                                                                | Language(s) |
-| --------------------------------------------------------------------------------------- | ----------- |
-| [OWASP Code Crawler](:Category:OWASP_Code_Crawler "wikilink")                           | .NET, Java  |
-| [OWASP Orizon Project](:Category:OWASP_Orizon_Project "wikilink")                       | Java        |
-| [OWASP LAPSE Project](OWASP_LAPSE_Project "wikilink")                                   | Java        |
-| [OWASP O2 Platform](OWASP_O2_Platform "wikilink")                                       |             |
-| [OWASP WAP-Web Application Protection](OWASP_WAP-Web_Application_Protection "wikilink") | PHP         |
-
-### Open Source/Free
-
-| Software                                                                                                           | Language(s)                                                                                                                                                        | OS(es)        |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
-| [Agnitio](https://sourceforge.net/projects/agnitiotool/)                                                           | ASP, ASP.NET, C\#, Java, Javascript, Perl, PHP, Python, Ruby, VB.NET, XML                                                                                          | Windows       |
-| [Brakeman](https://brakemanscanner.org/)                                                                           | Ruby, Rails                                                                                                                                                        |               |
-| [Google CodeSearchDiggity](https://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)         | Multiple                                                                                                                                                           |               |
-| [DevBug](http://www.devbug.co.uk)                                                                                  | PHP                                                                                                                                                                | web-based     |
-| [FindBugs](http://findbugs.sourceforge.net/)                                                                       | Java                                                                                                                                                               |               |
-| [SpotBugs](https://spotbugs.github.io/) (Successor of FindBugs)                                                    | Java                                                                                                                                                               |               |
-| [Find Security Bugs](https://find-sec-bugs.github.io/)                                                             | Java, Scala, Groovy                                                                                                                                                |               |
-| [FlawFinder](https://dwheeler.com/flawfinder/)                                                                     | C, C++                                                                                                                                                             |               |
-| [Microsoft FxCop](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/bb429476%28v=vs.80%29) | .NET                                                                                                                                                               |               |
-| [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)                             | Android Java, Objective C, Swift                                                                                                                                                                | Windows, Unix |
-| [.NET Security Guard](https://security-code-scan.github.io/)                                                       | .NET, C\#, VB.net                                                                                                                                                  |               |
-| [nodejsscan](https://github.com/ajinabraham/nodejsscan)                             | Node.js                                                                                                                                                                | Unix |
-| [phpcs-security-audit](https://github.com/FloeDesignTechnologies/phpcs-security-audit)                             | PHP                                                                                                                                                                | Windows, Unix |
-| [PMD](https://pmd.github.io/)                                                                                      | Java, JavaScript, Salesforce.com Apex and Visualforce, PLSQL, Apache Velocity, XML, XSL                                                                            |               |
-| [Puma Scan](https://www.pumascan.com/)                                                                             | .NET, C\#                                                                                                                                                          |               |
-| [Microsoft PREFast](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/ms933794%28v=msdn.10%29)   | C, C++                                                                                                                                                             |               |
-| [RIPS Open Source](http://rips-scanner.sourceforge.net/)                                                           | PHP                                                                                                                                                                | any           |
-| [SonarCloud](https://sonarcloud.io/about)                                                                          | ABAP, C, C++, Objective-C, COBOL, C\#, CSS, Flex, Go, HTML, Java, Javascript, Kotlin, PHP, PL/I, PL/SQL, Python, RPG, Ruby, Swift, T-SQL, TypeScript, VB6, VB, XML |               |
-| [Splint](https://www.splint.org/)                                                                                  | C                                                                                                                                                                  |               |
-| [VisualCodeGrepper](https://sourceforge.net/projects/visualcodegrepp/)                                             | C/C++, C\#, VB, PHP, Java, PL/SQL                                                                                                                                  | Windows       |
-
-### Commercial
-
-| Software                                                                                                                              | Language(s)                                                                                                                                                                                                                                                       | Notes                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [RIPS](https://www.ripstech.com/product/)                                                                                             | Java, PHP                                                                                                                                                                                                                                                         | OWASP Member                                 |
-| [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview)                                               | ABAP/BSP, ActionScript/MXML (Flex), ASP.NET, VB.NET, C\# (.NET), C/C++, Classic ASP (w/VBScript), COBOL, ColdFusion CFML, HTML, Java (including Android), JavaScript/AJAX, JSP, Objective-C, PHP, PL/SQL, Python, T-SQL, Ruby, Swift, Visual Basic, VBScript, XML | OWASP Member                                 |
-| [Veracode](https://www.veracode.com/)                                                                                                 | Android, ASP.NET, C\#, C, C++, Classic ASP, COBOL, ColdFusion/Java, Go, Groovy, iOS, Java, JavaScript, Perl, PhoneGap/Cordova, PHP, Python, React Native, RPG, Ruby on Rails, Scala, Titanium, TypeScript, VB.NET, Visual Basic 6, Xamarin                        | OWASP Member                                 |
-| [CodeSonar](https://www.grammatech.com/)                                                                                              | C, C++, Java                                                                                                                                                                                                                                                      |                                              |
-| [ParaSoft](https://www.parasoft.com/)                                                                                                 | C, C++, Java, .NET                                                                                                                                                                                                                                                |                                              |
-| <s>[Armorize CodeSecure](http://www.armorize.com/codesecure/)</s>                                                                     |                                                                                                                                                                                                                                                                   | OWASP Member; acquired by Proofpoint in 2013 |
-| [Checkmarx Static Code Analysis](https://www.checkmarx.com/)                                                                          | Android, Apex, ASP.NET, C\#, C++, Go, Groovy, HTML5, Java, JavaScript, JSP, .NET, Objective-C, Perl, PHP, PL/SQL, Python, Ruby, Scala, Swift, TypeScript, VB.NET, Visual Basic 6, Windows Phone                                                                   | OWASP Member                                 |
-| [HCL AppScan on Cloud](https://cloud.appscan.com/)                                                                                 | Apex, ASP, C, C++, COBOL, ColdFusion, Go, Java, JavaScript(Client-side JavaScript, Kotlin, NodeJS, and AngularJS), .NET (C#, ASP.NET, VB.NET), .NET Core, Perl, PHP, PL/SQL, Python, Ruby, T-SQL, Swift, Visual Basic 6                                                                    | OWASP Member              |                                             
-| [HCL AppScan Source](https://www.hcltechsw.com/wps/portal/products/appscan/offerings/source)                                                       | Android, Apex, ASP, C, C++, COBOL, ColdFusion, Go, Java, JavaScript(Client-side JavaScript, NodeJS, and AngularJS), .NET (C#, ASP.NET, VB.NET), .NET Core, Perl, PHP, PL/SQL, Python, Ruby, T-SQL, Visual Basic 6                                       | OWASP Member                                 |
-| [Coverity](https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html)                                    | Android, C\#, C, C++, Java, JavaScript, Node.js, Objective-C, PHP, Python, Ruby, Scala, Swift, VB.NET                                                                                                                                                             |                                              |
-| [PVS-Studio](https://www.viva64.com/en/pvs-studio/)                                                                                   | C, C++, C\#                                                                                                                                                                                                                                                       |                                              |
-| [Puma Scan Professional](https://pumascan.com/pricing/)                                                                               | .NET, C\#                                                                                                                                                                                                                                                         |                                              |
-| [Klocwork](https://www.roguewave.com/products-services/klocwork/static-code-analysis)                                                 | C, C++, C\#, Java                                                                                                                                                                                                                                                 |                                              |
-| [Polyspace Static Analysis](https://www.mathworks.com/products/polyspace.html)                                                        | C, C++, Ada                                                                                                                                                                                                                                                       |                                              |
-| [CodeSec](http://www.seczone.cn/2018/06/27/codesec%E6%BA%90%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8%E6%A3%80%E6%B5%8B%E5%B9%B3%E5%8F%B0/) | C, C++, C\#, Java, JavaScript, PHP, Kotlin, Lua, Scala, TypeScript, Android                                                                                                                                                                                       |                                              |
-| [Xanitizer](http://www.xanitizer.net)                                                                                                 | Java, Scala                                                                                                                                                                                                                                                       |                                              |
-| [NextGen Static Analysis](https://www.shiftleft.io/nextgen-static-analysis/) | C\#, Go, Java, JavaScript, Python, Scala               | | |
-
-### Other Tool Lists
-
+- [OWASP - Source Code Analysis Tools](../Source_Code_Analysis_Tools)
 - [NIST - Source Code Security Analyzers](http://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html)
 - [Wikipedia - List of tools for static code analysis](http://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis)
 

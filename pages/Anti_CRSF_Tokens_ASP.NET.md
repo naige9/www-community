@@ -155,13 +155,13 @@ questions:
 
 # Related [Attacks](https://owasp.org/www-community/attacks/)
 
-[CSRF (Attack)](https://owasp.org/www-community/attacks/csrf/)
+[CSRF (Attack)](https://owasp.org/www-community/attacks/csrf)
 [CSRF (Full Wikipedia Article)](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
 [XSS (Attack)](https://owasp.org/www-community/attacks/xss/)
 
 # Related [Vulnerabilities](https://owasp.org/www-community/vulnerabilities/)
 
-[XSS](https://www.owasp.org/index.php/Cross_Site_Scripting_Flaw)
+[XSS](https://wiki.owasp.org/index.php/Cross_Site_Scripting_Flaw)
 [Insecure Randomness](https://owasp.org/www-community/vulnerabilities/Insecure_Randomness)
 [Insecure Third-Party Domain Access](https://owasp.org/www-community/vulnerabilities/Insecure_Third_Party_Domain_Access)
 

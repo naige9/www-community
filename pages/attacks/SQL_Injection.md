@@ -21,7 +21,7 @@ administration operations on the database (such as shutdown the DBMS),
 recover the content of a given file present on the DBMS file system and
 in some cases issue commands to the operating system. SQL injection
 attacks are a type of injection attack, in which SQL commands
-are injected into data-plane input in order to effect the execution of
+are injected into data-plane input in order to affect the execution of
 predefined SQL commands.
 
 ## Threat Modeling
@@ -92,7 +92,7 @@ If one provided: `Firstname: evil'ex` and `Lastname: Newman`
 
 the query string becomes:
 
-`select id, firstname, lastname from authors where forename = 'evil'ex' and surname ='newman'`
+`select id, firstname, lastname from authors where firstname = 'evil'ex' and lastname ='newman'`
 
 which the database attempts to run as:
 
@@ -104,7 +104,7 @@ A safe version of the above SQL statement could be coded in Java as:
 String firstname = req.getParameter("firstname");
 String lastname = req.getParameter("lastname");
 // FIXME: do your own validation to detect attacks
-String query = "SELECT id, firstname, lastname FROM authors WHERE forename = ? and surname = ?";
+String query = "SELECT id, firstname, lastname FROM authors WHERE firstname = ? and lastname = ?";
 PreparedStatement pstmt = connection.prepareStatement( query );
 pstmt.setString( 1, firstname );
 pstmt.setString( 2, lastname );
@@ -249,7 +249,7 @@ application secure against SQL injection attacks.
 
 ## Related [Attacks](https://owasp.org/www-community/attacks/)
 
-- [SQL Injection Bypassing  WAF](https://www.owasp.org/index.php/SQL_Injection_Bypassing_WAF)
+- [SQL Injection Bypassing WAF](https://www.owasp.org/index.php/SQL_Injection_Bypassing_WAF)
 - [Blind SQL Injection](Blind_SQL_Injection)
 - [Code Injection](Code_Injection)
 - [Double Encoding](../Double_Encoding)
@@ -257,11 +257,9 @@ application secure against SQL injection attacks.
 
 ## References
 
-- [SQL Injection Knowledge  Base](http://www.websec.ca/kb/sql_injection) - A reference guide for  MySQL, MSSQL and Oracle SQL Injection attacks.
-- [GreenSQL Open Source SQL Injection  Filter](http://www.greensql.net/) - An Open Source database firewall  used to protect databases from SQL injection attacks.
-- [An Introduction to SQL Injection Attacks for Oracle  Developers](http://www.net-security.org/dl/articles/IntegrigyIntrotoSQLInjectionAttacks.pdf)
+- [SQL Injection Knowledge Base](http://www.websec.ca/kb/sql_injection) - A reference guide for MySQL, MSSQL and Oracle SQL Injection attacks.
+- [GreenSQL Open Source SQL Injection Filter](http://www.greensql.net/) - An Open Source database firewall used to protect databases from SQL injection attacks.
+- [An Introduction to SQL Injection Attacks for Oracle Developers](https://web.archive.org/web/20151005235207/http://www.net-security.org/dl/articles/IntegrigyIntrotoSQLInjectionAttacks.pdf)
   - This also includes recommended defenses.
-- OWASP [SQLiX Project](:Category:OWASP_SQLiX_Project "wikilink") - An  SQL Injection Scanner.
-- [Pangolin](http://www.nosec.org/en/pangolin.html) - Closed source  SQL Injection Scanner.
 
 [Category:Injection](https://owasp.org/www-community/Injection_Flaws)

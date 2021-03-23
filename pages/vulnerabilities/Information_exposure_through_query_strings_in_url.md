@@ -17,7 +17,12 @@ Information exposure through query strings in URL is when sensitive data is pass
 
 ## Risk Factors
 
-Threat Agents: App Specific Attack Vectors: Average Security Weakness (prevalence): Common Security Weakness (detectability): Difficult Technical Impacts: Moderate Business Impacts: App Specific
+- Threat Agents: App Specific
+- Attack Vectors: Average
+- Security Weakness (prevalence): Common
+- Security Weakness (detectability): Difficult
+- Technical Impacts: Moderate
+- Business Impacts: App Specific
 
 ## Examples
 
@@ -46,7 +51,6 @@ The following figure displays how an internal attacker can potentially exploit t
 
 ## References
 
-- [Testing for Exposed Session Variables (OTG-SESS-004)](https://www.owasp.org/index.php/Testing_for_Exposed_Session_Variables_\(OTG-SESS-004\))
 - [Top 10-2017 A3-Sensitive Data Exposure](https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure)
 - [Top 10 2013-A6-Sensitive Data Exposure](https://www.owasp.org/index.php/Top_10_2013-A6-Sensitive_Data_Exposure)
 - [CWE-598: Information Exposure Through Query Strings in GET Request](https://cwe.mitre.org/data/definitions/598.html)

@@ -6,7 +6,6 @@ author:
 contributors: 
 permalink: /attacks/CORS_OriginHeaderScrutiny
 tags: attack, CORS OriginHeaderScrutiny
-auto-migrated: 1
 
 ---
 
@@ -19,8 +18,7 @@ auto-migrated: 1
 Is a feature offering the possibility for:
 
 - A web application to expose resources to all or restricted domain,
-- A web client to make AJAX request for resource on other domain than
-    is source domain.
+- A web client to make AJAX request for resource on other domain than is source domain.
 
 This article will focus on the role of the **Origin** header in the
 exchange between web client and web application.
@@ -29,8 +27,7 @@ The basic process is composed of the steps below (sample HTTP
 request/response has been taken from [Mozilla
 Wiki](https://developer.mozilla.org/en-US/docs/HTTP_access_control)):
 
-- **Step 1 : Web client sends a request to get a resource from a
-    different domain.**
+- **Step 1 : Web client sends a request to get a resource from a different domain.**
 
 ```
 GET /resources/public-data/ HTTP/1.1
@@ -67,7 +64,7 @@ Access-Control-Allow-Origin: *
 
 The web application informs the web client of the allowed domains using
 the HTTP response header **Access-Control-Allow-Origin**. The header can
-contains either a '\*' to indicate that all domains are allowed OR a
+contain either a '\*' to indicate that all domains are allowed OR a
 specified domain to indicate the specified allowed domain.
 
 - **Step 3 : Web client process web application response.**
